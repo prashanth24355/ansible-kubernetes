@@ -1,0 +1,30 @@
+{
+  "kind": "Deployment",
+  "apiVersion": "extensions/v1beta1",
+  "metadata": {
+    "name": "weather-api",
+    //"namespace": "qatikali"
+  },
+      "spec": {
+        "containers": [{
+          "name": "weatherapp",
+          "image": "uditmittal/weatherapp:qa",
+          "imagePullPolicy": "Always",
+          "resources": {
+            "limits": {
+              "memory": "2Gi"
+            },
+            "requests": {
+              "memory": "1Gi"
+            }
+          }
+        }],
+        "imagePullSecrets": [{
+          "name": "regsecret"
+        }],
+        "restartPolicy": "Always"
+      },
+    "strategy": {}
+  },
+  "status": {}
+}

@@ -1,0 +1,7 @@
+logging:
+  level: INFO
+  loggers:
+    com.weather: DEBUG
+template: Hello, %s!
+defaultName: Stranger
+appId: 1d3a97911608ff9d9f3ed3edc81d150a

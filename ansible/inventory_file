@@ -1,0 +1,10 @@
+[webservers]
+
+host1
+host2
+
+[appservers]
+
+host3
+host4
+
